@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {%block head%}
+        <title>{{title}}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        {%endblock%}
+    </head>
+    <body>
+        <nav>
+            <div class="logo ">
+    Blogpedia</div>
+    <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            </label>
+            
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    
+                    <li><a href="#">Activity</a></li>
+                    <li><a href="#">Profile</a></li>
+                    
+                    <li><a href="#">Logout</a></li>
+                    
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#"> Signup</a></li>
+                
+                    
+                   
+                    </ul>
+         
+</nav>
+        {%block content%}
+           
+
+        {%endblock%}
+    </body>
+</html>
